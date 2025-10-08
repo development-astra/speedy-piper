@@ -494,7 +494,7 @@ h6 {
 /* Location Badge */
 .badge.location {
   /* background-color: transparent; */
-  background: rgba(197, 26, 48);
+  background: rgb(26, 51, 92);
   color: #FFF;
   padding: 8px 15px;
   font-size: 14px;
@@ -505,7 +505,7 @@ h6 {
 
 /* Promotion Badge */
 .badge.promotion {
-  background :#c51a30;
+  background :#1a335c;
   color: #ffffff;
   padding: 5px 12px;
   font-size: 18px;
@@ -524,7 +524,7 @@ h6 {
   /* ADDED: Prevent phone number from breaking */
   white-space: nowrap;
   line-height: 1.2;
-  color :#c51a30;
+  color :#1a335c;
 }
 
 /* =========================================
@@ -559,6 +559,7 @@ h6 {
   /* Force single row layout on mobile - ADDED */
   .header .d-flex {
     flex-wrap: nowrap !important;
+    align-items: flex-start !important;
   }
   
   /* Logo section adjustment for mobile - ADDED */
@@ -617,7 +618,24 @@ h6 {
   }
 }
 
+/* Mobile: nudge the logo further right */
+@media (max-width: 767.98px) {
+  /* tighten the white bar’s right padding */
+  .header .container-fluid {
+    padding-right: 12px !important;   /* try 4–8px to taste */
+    padding-left: 12px !important;
+  }
 
+  /* remove any leftover right offset on the logo wrapper */
+  .header .container-fluid > .d-flex > .d-md-none {
+    margin-right: 0 !important;
+  }
+
+  /* tiny extra nudge (optional) */
+  .header .container-fluid > .d-flex > .d-md-none .logo {
+    transform: translateX(-2px);   /* make -4px/-6px if you want it closer */
+  }
+}
 
 /* iPhone 14/15 Pro and similar (390px - 393px) - ADDED */
 @media (max-width: 393px) {
@@ -1495,13 +1513,13 @@ form button.btn {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background-color: #c51a30;
+  background-color: #1a335c;
   gap: 12px;
   align-self: stretch;
 }
 
 form button.btn:hover {
-  background-color: #c51a30;
+  background-color: #1a335c;
 }
 
 @media (max-width: 575px) {
@@ -1702,12 +1720,12 @@ form button.btn:hover {
   font-size: 18px;
   line-height: 125%;
   padding: 14px 32px;
-  background-color: #c51a30;
+  background-color: #1a335c;
 
   /* background-image: linear-gradient(to right, #2c2967, #eba126); */
   font-weight: 600;
   border-radius: 8px;
-  border: 1px solid #c51a30;
+  border: 1px solid #1a335c;
 }
 
 .why-choose-us .btn i {
@@ -2074,7 +2092,7 @@ form button.btn:hover {
   padding: 16px 40px;
   /* background-color: #16495F; */
   border:  none;
-  background-color: #c51a30;
+  background-color: #1a335c;
   font-weight: 600;
 }
 
@@ -2450,8 +2468,8 @@ form button.btn:hover {
   z-index: 1;
 }
 .contact-section form button.btn {
-  background-color: #c51a30 !important;
-  border: 1px solid #c51a30 !important;
+  background-color: #1a335c !important;
+  border: 1px solid #1a335c !important;
   padding: 16px;
   border-radius: 8px;
 }
