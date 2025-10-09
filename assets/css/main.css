@@ -1907,6 +1907,7 @@ form button.btn:hover {
 
 .services .service-item:hover .service-content .icon {
   background-color: #ffffff;
+  color: #c51a30;
 }
 
 .services .service-item:hover .service-content .icon svg path  {
@@ -1927,9 +1928,8 @@ form button.btn:hover {
 
 .services .service-item .service-content .icon {
   background-color: #c51a30;
+  color: #fff; 
 }
-
-
 
 .services .service-item .icon {
   flex-shrink: 0;
@@ -1944,6 +1944,7 @@ form button.btn:hover {
   overflow: hidden;
   /* prevents image overflow */
 }
+
 
 .services .service-item .icon img {
   max-width: 100%;
